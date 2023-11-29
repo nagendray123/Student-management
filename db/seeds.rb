@@ -24,21 +24,19 @@
 
 # 20.times do |i|
 # 	Student.create(
-# 		first_name: "Student#{i}",
-# 		last_name: "Lname#{i}",
-# 		email: "student#{i}@gmail.com"
+# 		first_name: "Nagendra#{i+1}",
+# 		last_name: "Kumar#{i+1}",
+# 		email: "kumarnagendra#{i+1}@gmail.com"
 # 	)
 # end
 
 
-# require 'faker'
 
 
-# (1..10).each do |i|
-# 	Student.create(
-# 	first_name: Faker::Internet.first_name,
-# 	last_name: Faker::Internet.last_name,
-# 	email: Faker::Internet.email
-# 	)
-# end
 
+# github cammand
+
+#git add .
+#git commit -m "student-controller and seed file"
+#git branch main
+#git push origin main
