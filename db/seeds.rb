@@ -24,9 +24,9 @@
 
 # 20.times do |i|
 # 	Student.create(
-# 		first_name: "Nagendra#{i+1}",
-# 		last_name: "Kumar#{i+1}",
-# 		email: "kumarnagendra#{i+1}@gmail.com"
+# 		first_name: "Admin#{i+1}",
+# 		last_name: "sena#{i+1}",
+# 		email: "admin#{i+1}@gmail.com"
 # 	)
 # end
 
@@ -38,5 +38,4 @@
 
 #git add .
 #git commit -m "student-controller and seed file"
-#git branch main
 #git push origin main

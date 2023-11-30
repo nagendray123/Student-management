@@ -4,7 +4,6 @@
 <p><strong>Last Name : <%= @student.last_name %></strong></p>
 <p><strong>Email : <%= @student.email %></strong></p>
 
-<%= link_to 'Back', students_path %> | <%= link_to 'Edit', edit_student_path(@student) %> |
-
-<%= link_to "Delete", student_path(@student), data: {
-	turbo_method: :delete, turbo_confirm: "Are you sure"} %>	
+<%= link_to 'Back', students_path %> |
+<%= link_to 'Edit', edit_student_path(@student) %>
+	
