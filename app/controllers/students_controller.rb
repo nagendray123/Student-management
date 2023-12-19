@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-   before_action :set_student, only: %i[show edit update destroy]
+   before_action :set_student, only: %i[show edit update destroy] 
 
 	def index
 	 @students = Student.all
@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
 	def create
      @student = Student.new(student_params)
 	  if @student.save
-	  	 redirect_to students_path
+	  	 redirect_to students_path, notice: "Student has been created successfully"
 	  else
 	  	 render :new, status: :unprocessable_entity
 	  end
@@ -29,7 +29,7 @@ class StudentsController < ApplicationController
 	def update
 	 # @student = Student.find(params[:id])
 	 if @student.update(student_params)
-	 	 redirect_to @student
+	 	 redirect_to @student, notice: "Student has been updated successfully"
 	 else
 	 	 render :edit, status: :unprocessable_entity
 	 end
@@ -39,7 +39,7 @@ class StudentsController < ApplicationController
 	 # @student = Student.find(params[:id])
 	 @student.destroy
 
-	 redirect_to @student, status: :see_other
+	 redirect_to @student, status: :see_other, notice: "Student has been deleted successfully"
 	end
 
 	private

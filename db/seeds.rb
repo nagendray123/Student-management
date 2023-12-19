@@ -25,7 +25,7 @@
 # 20.times do |i|
 # 	Student.create(
 # 		first_name: "Admin#{i+1}",
-# 		last_name: "sena#{i+1}",
+# 		last_name: "User#{i+1}",
 # 		email: "admin#{i+1}@gmail.com"
 # 	)
 # end
